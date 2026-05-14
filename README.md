@@ -1,73 +1,33 @@
 # ☸️ Kubernetes Lab
 
-Hands-on Kubernetes lab using Minikube — cluster setup, app deployment, service exposure and live traffic.
+Hands-on Kubernetes lab using Minikube — cluster setup, application deployment, service exposure, and live traffic validation.
 
-Built and documented by [Nerea Arce](https://www.linkedin.com/in/nerea-arce/) · Platform Engineer · DevOps
-
----
-
-## What this lab covers
-
-- Local Kubernetes cluster with Minikube
-- App deployment using Kubernetes Deployment manifest
-- Service exposure with NodePort
-- Live HTTP traffic served from inside the cluster
+Built and documented by [Nerea Arce](https://www.linkedin.com/in/nerea-arce/)  
+Platform Engineer | DevOps | SysAdmin
 
 ---
 
-## Cluster running
+## 📌 What this project covers
 
-![Kubernetes cluster](cluster.jpg.jpeg)
+This lab demonstrates a complete local Kubernetes workflow using Minikube.
 
----
+It includes:
 
-## App responding
-
-![App running](app-running.jpg.jpeg)
-
----
-
-## Files
-
-| File | Description |
-|------|-------------|
-| `deployment.yaml` | Kubernetes Deployment — hello-app with 1 replica |
-| `service.yaml` | NodePort Service — exposes app on port 8080 |
+- Local Kubernetes cluster setup
+- Application deployment using Deployment manifests
+- Service exposure using NodePort
+- Live HTTP traffic validation inside the cluster
+- Basic debugging and cluster inspection using kubectl
 
 ---
 
-## How to run
+## 🏗️ Architecture
 
-Start the cluster:
-
-    minikube start --driver=docker
-
-Apply the manifests:
-
-    kubectl apply -f deployment.yaml
-    kubectl apply -f service.yaml
-
-Check everything is running:
-
-    kubectl get pods,deployments,services
-
-Get the app URL:
-
-    minikube service hello-app --url
-
-Test the app:
-
-    curl <url>
-
----
-
-## Output
-
-    Hello, world!
-    Version: 1.0.0
-    Hostname: hello-app-66cdc8598f-sch8c
-
----
-
-## Tech stack
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=k
+```text
+User
+  ↓
+NodePort Service (hello-app)
+  ↓
+Kubernetes Deployment
+  ↓
+Pod (hello-app container)
