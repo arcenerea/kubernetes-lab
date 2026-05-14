@@ -17,13 +17,13 @@ Built and documented by [Nerea Arce](https://www.linkedin.com/in/nerea-arce/) ·
 
 ## Cluster running
 
-![Kubernetes cluster](cluster.jpg)
+![Kubernetes cluster](cluster.jpg.jpeg)
 
 ---
 
 ## App responding
 
-![App running](app-running.jpg)
+![App running](app-running.jpg.jpeg)
 
 ---
 
@@ -70,13 +70,4 @@ Test the app:
 ---
 
 ## Tech stack
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-
----
-
-## Author
-**Nerea Arce** — SysAdmin · DevOps · Cloud Infrastructure
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nerea-arce/)
-[![GitHub](https://img.shields.io/badge/GitHub-arcenerea-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/arcenerea)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=k
